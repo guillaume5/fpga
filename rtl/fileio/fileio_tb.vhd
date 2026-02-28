@@ -31,7 +31,7 @@ entity fileio_tb is
 end fileio_tb;
 
 architecture Behavioral of fileio_tb is
-  file fh : byte_file open write_mode is "data_file.txt";
+  file fh : byte_file open write_mode is "data_file.bin";
   signal cnt : integer := 0;
   signal clk : std_logic := '0';
 begin
